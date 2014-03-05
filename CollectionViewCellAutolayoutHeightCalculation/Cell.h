@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  Cell.h
 //  CollectionViewCellAutolayoutHeightCalculation
 //
 //  Created by Daniel Tull on 05.03.2014.
@@ -8,6 +8,9 @@
 
 @import UIKit;
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-@property (strong, nonatomic) UIWindow *window;
+@interface Cell : UICollectionViewCell
+
++ (Cell *)sizingCell;
+
+@property (nonatomic, copy) NSString *text;
 @end
