@@ -7,39 +7,64 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="DM0-5t-Wf9" customClass="Cell">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+            <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="180"/>
+                <rect key="frame" x="0.0" y="0.0" width="320" height="170"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1fh-fE-bpp">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="120"/>
+                        <rect key="frame" x="0.0" y="5" width="320" height="115"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="120" id="ola-Ul-Pco"/>
+                            <constraint firstAttribute="height" constant="115" id="ola-Ul-Pco"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1nH-Ak-IGd" customClass="Label">
-                        <rect key="frame" x="20" y="140" width="280" height="20"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CD6-Z6-W5n">
+                        <rect key="frame" x="10" y="130" width="300" height="30"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
-                        <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
-                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="290" translatesAutoresizingMaskIntoConstraints="NO" id="1nH-Ak-IGd" customClass="Label">
+                                <rect key="frame" x="5" y="5" width="290" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="1nH-Ak-IGd" secondAttribute="bottom" constant="5" id="0GE-2v-dEh"/>
+                            <constraint firstItem="1nH-Ak-IGd" firstAttribute="top" secondItem="CD6-Z6-W5n" secondAttribute="top" constant="5" id="6Ce-7S-uOq"/>
+                            <constraint firstItem="1nH-Ak-IGd" firstAttribute="leading" secondItem="CD6-Z6-W5n" secondAttribute="leading" constant="5" id="KSR-Ev-LIw"/>
+                            <constraint firstAttribute="trailing" secondItem="1nH-Ak-IGd" secondAttribute="trailing" constant="5" id="sNl-zQ-I4S"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1tL-dl-fGd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="5"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" red="0.50196081400000003" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="5" id="ja6-eE-kr4"/>
+                        </constraints>
+                    </view>
                 </subviews>
                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
             </view>
+            <color key="backgroundColor" red="0.11372549830000001" green="0.45882356169999999" blue="0.73725491759999995" alpha="1" colorSpace="deviceRGB"/>
             <constraints>
+                <constraint firstItem="1tL-dl-fGd" firstAttribute="leading" secondItem="DM0-5t-Wf9" secondAttribute="leading" id="8nX-Bv-ZQM"/>
+                <constraint firstAttribute="bottom" secondItem="CD6-Z6-W5n" secondAttribute="bottom" constant="10" id="9Lq-kj-Qgu"/>
                 <constraint firstAttribute="trailing" secondItem="1fh-fE-bpp" secondAttribute="trailing" id="ANh-vY-KGL"/>
-                <constraint firstItem="1nH-Ak-IGd" firstAttribute="top" secondItem="1fh-fE-bpp" secondAttribute="bottom" constant="20" id="Cz7-Dg-ADO"/>
-                <constraint firstItem="1nH-Ak-IGd" firstAttribute="leading" secondItem="DM0-5t-Wf9" secondAttribute="leading" constant="20" id="PZl-jC-siM"/>
+                <constraint firstAttribute="trailing" secondItem="CD6-Z6-W5n" secondAttribute="trailing" constant="10" id="WOz-Aj-1u0"/>
                 <constraint firstItem="1fh-fE-bpp" firstAttribute="leading" secondItem="DM0-5t-Wf9" secondAttribute="leading" id="ZPW-Dr-VHV"/>
-                <constraint firstItem="1fh-fE-bpp" firstAttribute="top" secondItem="DM0-5t-Wf9" secondAttribute="top" id="seo-mR-5sG"/>
-                <constraint firstAttribute="bottom" secondItem="1nH-Ak-IGd" secondAttribute="bottom" constant="20" id="sfq-pz-oKf"/>
-                <constraint firstAttribute="trailing" secondItem="1nH-Ak-IGd" secondAttribute="trailing" constant="20" id="swe-aX-TZS"/>
+                <constraint firstAttribute="trailing" secondItem="1tL-dl-fGd" secondAttribute="trailing" id="en9-gT-T8g"/>
+                <constraint firstItem="CD6-Z6-W5n" firstAttribute="leading" secondItem="DM0-5t-Wf9" secondAttribute="leading" constant="10" id="jPY-hd-NAq"/>
+                <constraint firstItem="1fh-fE-bpp" firstAttribute="top" secondItem="1tL-dl-fGd" secondAttribute="bottom" id="lIw-r6-TZk"/>
+                <constraint firstItem="1tL-dl-fGd" firstAttribute="top" secondItem="DM0-5t-Wf9" secondAttribute="top" id="rRu-fW-Uor"/>
+                <constraint firstItem="CD6-Z6-W5n" firstAttribute="top" secondItem="1fh-fE-bpp" secondAttribute="bottom" constant="10" id="tp3-nW-bvW"/>
             </constraints>
             <connections>
                 <outlet property="textLabel" destination="1nH-Ak-IGd" id="Wa7-Cy-D0M"/>
