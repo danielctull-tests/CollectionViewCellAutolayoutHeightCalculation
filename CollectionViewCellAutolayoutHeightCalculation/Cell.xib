@@ -21,7 +21,7 @@
                             <constraint firstAttribute="height" constant="120" id="ola-Ul-Pco"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1nH-Ak-IGd">
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="1nH-Ak-IGd" customClass="Label">
                         <rect key="frame" x="20" y="140" width="280" height="20"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="0.94999999999999996" alpha="1" colorSpace="calibratedWhite"/>
@@ -36,10 +36,10 @@
                 <constraint firstAttribute="trailing" secondItem="1fh-fE-bpp" secondAttribute="trailing" id="ANh-vY-KGL"/>
                 <constraint firstItem="1nH-Ak-IGd" firstAttribute="top" secondItem="1fh-fE-bpp" secondAttribute="bottom" constant="20" id="Cz7-Dg-ADO"/>
                 <constraint firstItem="1nH-Ak-IGd" firstAttribute="leading" secondItem="DM0-5t-Wf9" secondAttribute="leading" constant="20" id="PZl-jC-siM"/>
-                <constraint firstAttribute="trailing" secondItem="1nH-Ak-IGd" secondAttribute="trailing" constant="20" id="V5I-zi-mUA"/>
                 <constraint firstItem="1fh-fE-bpp" firstAttribute="leading" secondItem="DM0-5t-Wf9" secondAttribute="leading" id="ZPW-Dr-VHV"/>
                 <constraint firstItem="1fh-fE-bpp" firstAttribute="top" secondItem="DM0-5t-Wf9" secondAttribute="top" id="seo-mR-5sG"/>
                 <constraint firstAttribute="bottom" secondItem="1nH-Ak-IGd" secondAttribute="bottom" constant="20" id="sfq-pz-oKf"/>
+                <constraint firstAttribute="trailing" secondItem="1nH-Ak-IGd" secondAttribute="trailing" constant="20" id="swe-aX-TZS"/>
             </constraints>
             <connections>
                 <outlet property="textLabel" destination="1nH-Ak-IGd" id="Wa7-Cy-D0M"/>

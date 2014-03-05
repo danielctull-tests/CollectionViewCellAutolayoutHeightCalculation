@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		24B838D618C7346E00B81726 /* Label.m in Sources */ = {isa = PBXBuildFile; fileRef = 24B838D518C7346E00B81726 /* Label.m */; };
 		24F740DD18C71F5D0068B1D5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F740DC18C71F5D0068B1D5 /* main.m */; };
 		24F740E318C71F5D0068B1D5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 24F740E218C71F5D0068B1D5 /* Images.xcassets */; };
 		24F7410118C720180068B1D5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 24F7410018C720180068B1D5 /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		24B838D418C7346E00B81726 /* Label.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Label.h; sourceTree = "<group>"; };
+		24B838D518C7346E00B81726 /* Label.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Label.m; sourceTree = "<group>"; };
 		24F740CD18C71F5D0068B1D5 /* CollectionViewCellAutolayoutHeightCalculation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewCellAutolayoutHeightCalculation.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		24F740D818C71F5D0068B1D5 /* CollectionViewCellAutolayoutHeightCalculation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CollectionViewCellAutolayoutHeightCalculation-Info.plist"; sourceTree = "<group>"; };
 		24F740DC18C71F5D0068B1D5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -75,6 +78,8 @@
 				24F7410D18C723B80068B1D5 /* Cell.xib */,
 				24F7410218C720330068B1D5 /* iPhone.storyboard */,
 				24F7410F18C72BBE0068B1D5 /* iPad.storyboard */,
+				24B838D418C7346E00B81726 /* Label.h */,
+				24B838D518C7346E00B81726 /* Label.m */,
 			);
 			path = CollectionViewCellAutolayoutHeightCalculation;
 			sourceTree = "<group>";
@@ -147,6 +152,7 @@
 				24F7410118C720180068B1D5 /* ViewController.m in Sources */,
 				24F7410918C721360068B1D5 /* Cell.m in Sources */,
 				24F740DD18C71F5D0068B1D5 /* main.m in Sources */,
+				24B838D618C7346E00B81726 /* Label.m in Sources */,
 				24F7410618C7209A0068B1D5 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +285,7 @@
 				24F740FB18C71F5D0068B1D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
