@@ -8,10 +8,6 @@
 
 #import "Label.h"
 
-@interface Label ()
-@property (nonatomic) CGSize internalIntrinsicContentSize;
-@end
-
 @implementation Label
 
 - (CGSize)intrinsicContentSize {
