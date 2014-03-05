@@ -14,22 +14,24 @@
 
 @implementation Cell
 
++ (UINib *)nib {
+	static UINib *nib;
+	static dispatch_once_t nibToken;
+	dispatch_once(&nibToken, ^{
+		nib = [UINib nibWithNibName:NSStringFromClass(self) bundle:nil];
+	});
+	return nib;
+}
+
 + (Cell *)sizingCell {
 	static Cell *sizingCell;
-	static dispatch_once_t onceToken;
-	dispatch_once(&onceToken, ^{
-		UINib *nib = [UINib nibWithNibName:NSStringFromClass(self) bundle:nil];
+	static dispatch_once_t sizingCellToken;
+	dispatch_once(&sizingCellToken, ^{
+		UINib *nib = [self nib];
 		NSArray *objects = [nib instantiateWithOwner:nil options:nil];
 		sizingCell = [objects firstObject];
 	});
 	return sizingCell;
-}
-
-- (CGSize)systemLayoutSizeFittingSize:(CGSize)targetSize {
-	self.textLabel.preferredMaxLayoutWidth = targetSize.width - 40.0f;
-	CGSize size = [self.contentView systemLayoutSizeFittingSize:targetSize];
-	NSLog(@"%@:%@ %@", self, NSStringFromSelector(_cmd), NSStringFromCGSize(size));
-	return size;
 }
 
 - (void)setText:(NSString *)text {

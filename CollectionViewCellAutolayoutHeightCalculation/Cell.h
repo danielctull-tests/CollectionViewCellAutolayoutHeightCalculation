@@ -10,6 +10,7 @@
 
 @interface Cell : UICollectionViewCell
 
++ (UINib *)nib;
 + (Cell *)sizingCell;
 
 @property (nonatomic, copy) NSString *text;
